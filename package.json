@@ -1,0 +1,22 @@
+{
+  "name": "gaffa-button",
+  "author": "Kory Nunn <knunn187@gmail.com>",
+  "version": "1.0.0",
+  "main": "button.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KoryNunn/gaffa-button.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/gaffa-button/issues"
+  },
+  "keywords": [
+    "gaffa",
+    "button",
+    "view"
+  ],
+  "peerDependencies": {
+    "gaffa": "^1.0.0"
+  },
+  "license": "MIT"
+}
