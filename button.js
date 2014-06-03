@@ -1,12 +1,9 @@
-"use strict";
-
 var Gaffa = require('gaffa'),
-    crel = require('crel'),
-    viewType = "button";
+    crel = require('crel');
 
 function Button(){}
 Button = Gaffa.createSpec(Button, Gaffa.ContainerView);
-Button.prototype.type = viewType;
+Button.prototype._type = 'button';
 
 Button.prototype.render = function(){
     var textNode = document.createTextNode(''),
@@ -14,7 +11,7 @@ Button.prototype.render = function(){
 
     this.views.content.element = renderedElement;
 
-    this.text.textNode = textNode;
+    this.textNode = textNode;
 
     this.renderedElement = renderedElement;
 
@@ -22,13 +19,13 @@ Button.prototype.render = function(){
 
 Button.prototype.text = new Gaffa.Property(function(view, value){
     if(value !== null && value !== undefined){
-        this.textNode.textContent = value;
+        view.textNode.textContent = value;
     }else{
-        this.textNode.textContent = '';
+        view.textNode.textContent = '';
     }
 });
 
-Button.prototype.subType = new Gaffa.Property(function(viewModel, value){
+Button.prototype.type = new Gaffa.Property(function(viewModel, value){
     viewModel.renderedElement.setAttribute("type", value || 'button');
 });
 

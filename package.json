@@ -10,13 +10,31 @@
   "bugs": {
     "url": "https://github.com/KoryNunn/gaffa-button/issues"
   },
+  "scripts": {
+    "test": "browserify ./test > ./test/index.browser.js"
+  },
   "keywords": [
     "gaffa",
     "button",
     "view"
   ],
   "peerDependencies": {
-    "gaffa": "^1.0.0"
+    "gaffa": "^1.4.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gaffa": "~1.6.1",
+    "gaffa-set": "~1.2.0",
+    "crel": "~1.1.2",
+    "gaffa-form": "~1.1.0",
+    "doc-js": "~0.4.7"
+  },
+  "dependencies": {
+    "crel": "~1.1.2"
+  },
+  "description": "A button view for use in gaffa",
+  "homepage": "https://github.com/KoryNunn/gaffa-button",
+  "directories": {
+    "test": "test"
+  }
 }
