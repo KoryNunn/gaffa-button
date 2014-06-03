@@ -4,7 +4,7 @@ A button view for use in [gaffa](https://github.com/gaffa-tape/gaffa-js)
 
 ## Example
 
-    [testfile](https://rawgit.com/KoryNunn/gaffa-button/master/test/index.html)
+[testfile](https://rawgit.com/KoryNunn/gaffa-button/master/test/test.html)
 
 ## Install:
 
