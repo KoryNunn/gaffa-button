@@ -29,12 +29,4 @@ Button.prototype.type = new Gaffa.Property(function(viewModel, value){
     viewModel.renderedElement.setAttribute("type", value || 'button');
 });
 
-Button.prototype.disabled = new Gaffa.Property(function(viewModel, value){
-    if(value){
-        viewModel.renderedElement.setAttribute("disabled", "disabled");
-    }else{
-        viewModel.renderedElement.removeAttribute("disabled");
-    }
-});
-
 module.exports = Button;

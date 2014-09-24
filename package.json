@@ -30,7 +30,7 @@
     "doc-js": "~0.4.7"
   },
   "dependencies": {
-    "crel": "~1.1.2"
+    "crel": "^2.1.2"
   },
   "description": "A button view for use in gaffa",
   "homepage": "https://github.com/KoryNunn/gaffa-button",
